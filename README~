@@ -1,0 +1,17 @@
+RPi NFC Secure Entry
+
+This is a tiny home made tool that just monitors the door, detects
+users, and sends alerts. In the future it might sound an audible alarm
+and take pictures, but I don't have the hardware to test it right now,
+so it is what it is.
+
+By default, RPi NFC Security uses GPIO 23 as the signal pin.
+
+Wiring is easy, so long as you have bits of wire, aluminum foil, and
+a ~10kOhm resistor for the pull-down. Looks like the following:
+
+POSTITIVE PIN +_______________DOOR SWITCH_
+NEGATIVE PIN  -__10kOhm_______DOOR SWITCH_|
+SIGNAL PIN    O__________|
+
+The 
